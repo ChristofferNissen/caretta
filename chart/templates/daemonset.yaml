@@ -3,7 +3,6 @@ kind: DaemonSet
 metadata:
   name: {{ include "caretta.name" . }}
   labels:
-    app: caretta
     {{- include "caretta.labels" . | nindent 4 }}
 spec:
   selector:
