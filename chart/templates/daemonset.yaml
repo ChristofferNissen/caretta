@@ -10,8 +10,8 @@ spec:
       {{- include "caretta.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      annotations:
     {{- with .Values.podAnnotations }}
+      annotations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
       labels:
