@@ -46,8 +46,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 Selector labels
 */}}
 {{- define "caretta.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "caretta.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
+app: {{ include "caretta.name" . }}
 {{- end }}
 
 {{/*
