@@ -26,4 +26,4 @@ spec:
     rule: RunAsAny
   volumes:
   - '*'
-{{ end -}}
+{{- end }}
