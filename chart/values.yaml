@@ -5,8 +5,8 @@ pollIntervalSeconds: 5
 traverseUpHierarchy: true
 
 rbac:
-  pspEnabled: true
-  sccEnabled: true
+  pspEnabled: false
+  sccEnabled: false
 image:
   repository: quay.io/groundcover/caretta
   pullPolicy: Always
